@@ -1,0 +1,17 @@
+versi python yang digunakan : 3.10.7
+
+library yang digunakan : 
+- pyodbc
+- tkinter
+- customtkinter
+
+untuk menginstall library : 
+pip install pyodbc
+pip install tkinter
+pip install customtkinter
+
+untuk menjalankan program : 
+1. jalankan file DDL.sql
+2. ganti koneksi ke SQLServer pada file connectDB
+3. jalankan command "python server.py"
+4. jalankan command "python client.py"

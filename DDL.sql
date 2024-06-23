@@ -1,0 +1,11 @@
+CREATE TABLE Users(
+    user_id INT PRIMARY KEY IDENTITY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Rooms(
+    room_id INT PRIMARY KEY IDENTITY,
+    room_name VARCHAR(100) NOT NULL UNIQUE,
+    owner_user_id INT NOT NULL FOREIGN KEY REFERENCES Users(user_id)
+)
